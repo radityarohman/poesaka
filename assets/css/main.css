@@ -1,0 +1,50 @@
+:root {
+    --dark-choco: #432719;
+    --yellow-light: #FFE7A7;
+    --choco: #98582A;
+    --white: #F9F4EE
+}
+
+.font-libre {
+    font-family: "Libre Baskerville", serif;
+}
+
+.font-source-sans {
+    font-family: "Source Sans 3", serif;
+}
+
+.text-dark-choco {
+    color: var(--dark-choco);
+}
+
+.text-yellow-light {
+    color: var(--yellow-light);
+}
+
+.text-choco {
+    color: var(--choco);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.bg-dark-choco {
+    background-color: var(--dark-choco);
+}
+
+.bg-yellow-light {
+    background-color: var(--yellow-light);
+}
+
+.bg-choco {
+    background-color: var(--choco);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.container {
+    margin-inline: 93px;
+}
