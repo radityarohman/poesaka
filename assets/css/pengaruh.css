@@ -1,0 +1,21 @@
+.card-container {
+    perspective: 50em;
+  }
+  
+  .card {
+    position: relative;
+    width: 320px;
+    padding: 3em;
+    color: #fff;
+    background-color: #98582A; /* Warna solid */
+    border-radius: 10px;
+    transform: rotateY(10deg) rotateX(5deg); /* Rotasi lebih halus */
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease; /* Animasi transisi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  }
+  
+  .card:hover {
+    transform: rotateY(-10deg) rotateX(-5deg); /* Rotasi hover lebih halus */
+  }
+  
