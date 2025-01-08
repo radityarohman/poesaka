@@ -65,7 +65,8 @@ function isElementInViewport(el) {
 window.addEventListener('scroll', () => {
   counters.forEach((counterEl, index) => {
     if (isElementInViewport(counterEl)) {
-      startCounter(counterEl, index, targetValues[index]); // Mulai counter
+      startCounter(counterEl, index, targetValues[index]); 
     }
   });
 });
+
