@@ -1,7 +1,7 @@
 const menuButton = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 const navbar = document.getElementById('navbar');
-const navlink = document.querySelectorAll('.navbar-link');
+const navlink = document.querySelectorAll('nav a');
 
 // Toggle Menu Visibility & ARIA Attribute
 menuButton.addEventListener('click', () => {
