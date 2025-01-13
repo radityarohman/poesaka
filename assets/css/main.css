@@ -49,3 +49,39 @@
     padding-inline: 10%;
     padding-block: 5%;
 }
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animation-scroll-left {
+    animation: scroll-left 30s linear infinite;
+}
+
+.animation-scroll-right {
+    animation: scroll-right 30s linear infinite;
+}
+
+.slide-in {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+.slide-in.active {
+    transform: translateX(0);
+    opacity: 1;
+}
