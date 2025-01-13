@@ -22,3 +22,27 @@ window.addEventListener('scroll', () => {
     navlink.classList.remove('text-yellow-light')
   }
 });
+
+// Mengatur posisi anchor link saat diklik (scroll offset)
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Mencegah perilaku default
+
+    const targetId = link.getAttribute('href').substring(1); // Menghapus tanda #
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = navbar.offsetHeight; // Menghitung tinggi navbar
+      const targetPosition = targetElement.offsetTop - offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      });
+
+      // Menutup menu (untuk perangkat mobile)
+      menu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', false);
+    }
+  });
+});
