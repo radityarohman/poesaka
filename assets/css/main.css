@@ -85,3 +85,14 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+html ::-webkit-scrollbar-track {
+	background: transparent;
+}
+html ::-webkit-scrollbar-thumb {
+	background: #432719;
+	border-radius: 10px;
+}
+html ::-webkit-scrollbar {
+	width: 12px;
+}
