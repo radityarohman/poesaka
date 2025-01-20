@@ -1,1216 +1,1233 @@
 <!DOCTYPE html>
 <html lang="en" class="!scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Poesaka</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poesaka</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+    />
 
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-			rel="stylesheet"
-		/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- CSS files -->
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link rel="stylesheet" href="/assets/css/pengaruh.css" />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/pengaruh.css" />
 
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body class="overflow-x-hidden">
-		<section
-			class="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#FFE7A7] to-[#8E5227] pt-[72px]"
-			id="beranda"
-		>
-			<nav id="navbar" class="fixed top-0 left-0 w-full navbar-fixed z-50">
-				<div
-					class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 font-source-sans"
-				>
-					<!-- Logo -->
-					<a
-						href="#beranda"
-						class="flex items-center space-x-3 rtl:space-x-reverse"
-					>
-						<h1
-							class="font-libre text-2xl font-semibold whitespace-nowrap text-black"
-						>
-							Poesaka
-						</h1>
-					</a>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <section
+      class="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#FFE7A7] to-[#8E5227] pt-[72px]"
+      id="beranda"
+    >
+      <nav id="navbar" class="fixed top-0 left-0 w-full navbar-fixed z-50">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 font-source-sans"
+        >
+          <!-- Logo -->
+          <a
+            href="#beranda"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="/assets/images/logo-poesaka.png"
+              alt="logo-poesaka"
+              class="w-10"
+            />
+            <h1
+              class="font-libre text-2xl font-semibold whitespace-nowrap text-black"
+            >
+              Poesaka
+            </h1>
+          </a>
 
-					<!-- Hamburger Button -->
-					<button
-						id="menu-button"
-						type="button"
-						class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#FFE7A7] rounded-lg md:hidden hover:bg-[#98582A] focus:outline-none focus:ring-2 focus:ring-[#98582A]"
-						aria-expanded="false"
-					>
-						<span class="sr-only">Open main menu</span>
-						<svg
-							class="w-5 h-5"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 17 14"
-						>
-							<path
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M1 1h15M1 7h15M1 13h15"
-							/>
-						</svg>
-					</button>
+          <!-- Hamburger Button -->
+          <button
+            id="menu-button"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#FFE7A7] rounded-lg md:hidden hover:bg-[#98582A] focus:outline-none focus:ring-2 focus:ring-[#98582A]"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
 
-					<!-- Navigation Menu -->
-					<div id="menu" class="hidden w-full md:block md:w-auto">
-						<ul
-							class="font-semibold flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0"
-						>
-							<li>
-								<a
-									href="#beranda"
-									class="navbar-link relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-									>Beranda</a
-								>
-							</li>
-							<li>
-								<a
-									href="#tentang"
-									class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-									>Tentang</a
-								>
-							</li>
-							<li>
-								<a
-									href="#budaya"
-									class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-									>Budaya</a
-								>
-							</li>
-							<li>
-								<a
-									href="#pengaruh"
-									class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-									>Pengaruh</a
-								>
-							</li>
-							<li>
-								<a
-									href="#hubungi"
-									class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-									>Hubungi Kami</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+          <!-- Navigation Menu -->
+          <div id="menu" class="hidden w-full md:block md:w-auto">
+            <ul
+              class="font-semibold flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0"
+            >
+              <li>
+                <a
+                  href="#beranda"
+                  class="navbar-link relative block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tentang"
+                  class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#budaya"
+                  class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                  >Budaya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pengaruh"
+                  class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                  >Pengaruh</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#hubungi"
+                  class="navbar-link relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 md:after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                  >Hubungi Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-			<section class="h-[1400px] md:px-0 px-10 mt-20">
-				<div
-					class="text-center md:px-20 px-0 flex flex-col justify-items-center items-center"
-				>
-					<h1
-						class="font-libre text-4xl font-bold tracking-tighter leading-none md:text-5xl lg:text-6xl text-choco lg:w-[700px] md:w-[500px]"
-					>
-						Lestarikan Budaya, di Era Digital
-					</h1>
-					<p
-						class="font-source-sans text-lg text-zinc-600 mt-5 lg:w-[580px] md:w-[590px]"
-					>
-						Mari jadikan segala budaya dan warisan yang telah diturunkan oleh
-						leluhur kita menjadi harta termahal yang bangsa ini miliki.
-					</p>
-					<div class="mt-11">
-						<a
-							href="#tentang"
-							class="relative inline-flex items-center justify-center p-4 px-8 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[#98582A] rounded-full group"
-						>
-							<span
-								class="absolute text-[#FFE7A7] inset-0 flex items-center justify-center w-full h-full duration-300 -translate-x-full bg-[#98582A] group-hover:translate-x-0 ease"
-							>
-								<svg
-									class="w-6 h-6"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M14 5l7 7m0 0l-7 7m7-7H3"
-									></path>
-								</svg>
-							</span>
-							<span
-								class="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease text-[#98582A] font-source-sans font-semibold"
-								>Telusuri Sekarang</span
-							>
-							<span class="relative invisible">Telusuri Sekarang</span>
-						</a>
-					</div>
-				</div>
-			</section>
-			<section
-				class="overflow-hidden w-full max-w-screen flex items-center absolute -bottom-24 max-md:-bottom-32"
-			>
-				<div class="flex gap-2 w-[200%] animation-scroll-left">
-					<img
-						src="/assets/images/indonesian-traditional-mask-dance-performer.webp"
-						alt="indonesian-traditional-mask-dance-performer"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/dayak-tribal-dance-performance-traditional-costume.webp"
-						alt="dayak-tribal-dance-performance-traditional-costume"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/traditional-bamboo-angklung-music-workshop-indonesia.webp"
-						alt="traditional-bamboo-angklung-music-workshop-indonesia"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesian-palace-guards-traditional-red-uniform.webp"
-						alt="indonesian-palace-guards-traditional-red-uniform"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesia-flag-bearer-sunset-silhouette.webp"
-						alt="indonesia-flag-bearer-sunset-silhouette"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesian-traditional-mask-dance-performer.webp"
-						alt="indonesian-traditional-mask-dance-performer"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/dayak-tribal-dance-performance-traditional-costume.webp"
-						alt="dayak-tribal-dance-performance-traditional-costume"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/traditional-bamboo-angklung-music-workshop-indonesia.webp"
-						alt="traditional-bamboo-angklung-music-workshop-indonesia"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesian-palace-guards-traditional-red-uniform.webp"
-						alt="indonesian-palace-guards-traditional-red-uniform"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesia-flag-bearer-sunset-silhouette.webp"
-						alt="indonesia-flag-bearer-sunset-silhouette"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-				</div>
-			</section>
-			<section
-				class="overflow-hidden w-full max-w-screen flex items-center absolute -bottom-72"
-			>
-				<div class="flex gap-2 w-[200%] animation-scroll-right">
-					<img
-						src="/assets/images/bukittinggi-jam-gadang-clock-tower-minangkabau.webp"
-						alt="indonesian-traditional-mask-dance-performer"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/hindu-prayer-ceremony-white-clothing-bali.webp"
-						alt="dayak-tribal-dance-performance-traditional-costume"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/traditional-balinese-temple-door-guardian-statues.webp"
-						alt="traditional-bamboo-angklung-music-workshop-indonesia"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/ulun-danu-beratan-temple-bali-lake-mountains.webp"
-						alt="indonesian-palace-guards-traditional-red-uniform"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesia-waterfall-rice-field-flag-bearers.webp"
-						alt="indonesia-flag-bearer-sunset-silhouette"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded object-bottom"
-					/>
-					<img
-						src="/assets/images/bukittinggi-jam-gadang-clock-tower-minangkabau.webp"
-						alt="indonesian-traditional-mask-dance-performer"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/hindu-prayer-ceremony-white-clothing-bali.webp"
-						alt="dayak-tribal-dance-performance-traditional-costume"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/traditional-balinese-temple-door-guardian-statues.webp"
-						alt="traditional-bamboo-angklung-music-workshop-indonesia"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/ulun-danu-beratan-temple-bali-lake-mountains.webp"
-						alt="indonesian-palace-guards-traditional-red-uniform"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
-					/>
-					<img
-						src="/assets/images/indonesia-waterfall-rice-field-flag-bearers.webp"
-						alt="indonesia-flag-bearer-sunset-silhouette"
-						loading="lazy"
-						class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded object-bottom"
-					/>
-				</div>
-			</section>
-		</section>
+      <section class="h-[1400px] md:px-0 px-10 mt-20">
+        <div
+          class="text-center md:px-20 px-0 flex flex-col justify-items-center items-center"
+        >
+          <h1
+            class="font-libre text-4xl font-bold tracking-tighter leading-none md:text-5xl lg:text-6xl text-choco lg:w-[700px] md:w-[500px]"
+          >
+            Lestarikan Budaya, di Era Digital
+          </h1>
+          <p
+            class="font-source-sans text-lg text-zinc-600 mt-5 lg:w-[580px] md:w-[590px]"
+          >
+            Mari jadikan segala budaya dan warisan yang telah diturunkan oleh
+            leluhur kita menjadi harta termahal yang bangsa ini miliki.
+          </p>
+          <div class="mt-11">
+            <a
+              href="#tentang"
+              class="relative inline-flex items-center justify-center p-4 px-8 py-2 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[#98582A] rounded-full group"
+            >
+              <span
+                class="absolute text-[#FFE7A7] inset-0 flex items-center justify-center w-full h-full duration-300 -translate-x-full bg-[#98582A] group-hover:translate-x-0 ease"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </span>
+              <span
+                class="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease text-[#98582A] font-source-sans font-semibold"
+                >Telusuri Sekarang</span
+              >
+              <span class="relative invisible">Telusuri Sekarang</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="overflow-hidden w-full max-w-screen flex items-center absolute -bottom-24 max-md:-bottom-32"
+      >
+        <div class="flex gap-2 w-[200%] animation-scroll-left">
+          <img
+            src="/assets/images/indonesian-traditional-mask-dance-performer.webp"
+            alt="indonesian-traditional-mask-dance-performer"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/dayak-tribal-dance-performance-traditional-costume.webp"
+            alt="dayak-tribal-dance-performance-traditional-costume"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/traditional-bamboo-angklung-music-workshop-indonesia.webp"
+            alt="traditional-bamboo-angklung-music-workshop-indonesia"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesian-palace-guards-traditional-red-uniform.webp"
+            alt="indonesian-palace-guards-traditional-red-uniform"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesia-flag-bearer-sunset-silhouette.webp"
+            alt="indonesia-flag-bearer-sunset-silhouette"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesian-traditional-mask-dance-performer.webp"
+            alt="indonesian-traditional-mask-dance-performer"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/dayak-tribal-dance-performance-traditional-costume.webp"
+            alt="dayak-tribal-dance-performance-traditional-costume"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/traditional-bamboo-angklung-music-workshop-indonesia.webp"
+            alt="traditional-bamboo-angklung-music-workshop-indonesia"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesian-palace-guards-traditional-red-uniform.webp"
+            alt="indonesian-palace-guards-traditional-red-uniform"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesia-flag-bearer-sunset-silhouette.webp"
+            alt="indonesia-flag-bearer-sunset-silhouette"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+        </div>
+      </section>
+      <section
+        class="overflow-hidden w-full max-w-screen flex items-center absolute -bottom-72"
+      >
+        <div class="flex gap-2 w-[200%] animation-scroll-right">
+          <img
+            src="/assets/images/bukittinggi-jam-gadang-clock-tower-minangkabau.webp"
+            alt="indonesian-traditional-mask-dance-performer"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/hindu-prayer-ceremony-white-clothing-bali.webp"
+            alt="dayak-tribal-dance-performance-traditional-costume"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/traditional-balinese-temple-door-guardian-statues.webp"
+            alt="traditional-bamboo-angklung-music-workshop-indonesia"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/ulun-danu-beratan-temple-bali-lake-mountains.webp"
+            alt="indonesian-palace-guards-traditional-red-uniform"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesia-waterfall-rice-field-flag-bearers.webp"
+            alt="indonesia-flag-bearer-sunset-silhouette"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded object-bottom"
+          />
+          <img
+            src="/assets/images/bukittinggi-jam-gadang-clock-tower-minangkabau.webp"
+            alt="indonesian-traditional-mask-dance-performer"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/hindu-prayer-ceremony-white-clothing-bali.webp"
+            alt="dayak-tribal-dance-performance-traditional-costume"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/traditional-balinese-temple-door-guardian-statues.webp"
+            alt="traditional-bamboo-angklung-music-workshop-indonesia"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/ulun-danu-beratan-temple-bali-lake-mountains.webp"
+            alt="indonesian-palace-guards-traditional-red-uniform"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded"
+          />
+          <img
+            src="/assets/images/indonesia-waterfall-rice-field-flag-bearers.webp"
+            alt="indonesia-flag-bearer-sunset-silhouette"
+            loading="lazy"
+            class="w-[294px] max-md:w-[230px] max-sm:w-[200px] aspect-video object-cover rounded object-bottom"
+          />
+        </div>
+      </section>
+    </section>
 
-		<section class="relative" id="tentang">
-			<div
-				class="bg-dark-choco absolute z-10 -top-96 w-full lg:min-h-[2700px] md:min-h-[2000px] min-h-[2500px] rounded-t-[200px] max-sm:rounded-t-[70px]"
-			>
-				<img
-					src="/assets/images/gunungan-kiri.svg"
-					alt="gunungan-wayang"
-					class="absolute -z-10 left-0 md:-top-64 max-md:w-1/2"
-				/>
-				<img
-					src="/assets/images/gunungan-kanan.svg"
-					alt="gunungan-wayang"
-					class="absolute -z-10 right-0 md:-top-28 top-40 max-md:w-1/2"
-				/>
-				<div class="px-32 max-md:px-10 md:mt-56 mt-48">
-					<div class="text-yellow-light">
-						<p class="font-source-sans font-bold uppercase">
-							Tujuan Melestarikan Budaya Indonesia
-						</p>
-						<h1 class="font-libre lg:text-5xl md:text-4xl text-3xl mt-5">
-							Tanpa budaya lokal, kita kehilangan jati diri.
-							<span class="font-bold">Lestarikan warisan leluhur</span>, karena
-							itulah yang membuat bangsa ini bermakna.
-						</h1>
-					</div>
-					<div class="flex md:flex-row flex-col gap-5 md:mt-16 mt-8">
-						<div class="lg:w-4/6 md:w-3/6">
-							<img
-								src="assets/images/candi-borobudur-photo.webp"
-								alt="candi-borobudur-photo"
-								class="rounded-[20px] h-full object-cover"
-							/>
-						</div>
-						<div
-							class="bg-yellow-light lg:w-2/6 md:w-3/6 rounded-[20px] text-dark-choco flex gap-2 flex-col justify-center px-11 py-10"
-						>
-							<h2 class="font-libre font-bold lg:text-3xl max-lg:text-2xl">
-								Candi Borobudur
-							</h2>
-							<p class="font-source-sans md:text-balance">
-								Seperti Candi Borobudur yang abadi, budaya lokal adalah warisan
-								luhur yang harus kita jaga sebagai jati diri bangsa.
-							</p>
-						</div>
-					</div>
-					<div
-						class="flex md:flex-row flex-col max-md:flex-col-reverse gap-5 md:mt-8 mt-6"
-					>
-						<div
-							class="bg-yellow-light w-4/6 max-md:w-full rounded-[20px] text-dark-choco flex gap-2 flex-col justify-center px-11 py-10"
-						>
-							<h2 class="font-libre font-bold lg:text-3xl max-lg:text-2xl">
-								Tujuan Kami
-							</h2>
-							<p class="font-source-sans text-lg">
-								Memudarnya pengetahuan generasi muda tentang budaya lokal,
-								ditambah dengan pesatnya arus globalisasi, menjadi tantangan
-								besar dalam melestarikan warisan budaya kita. Untuk menjawab
-								tantangan ini, kami bersama komunitas pecinta budaya berkomitmen
-								melestarikan dan mengembangkan budaya lokal agar tetap relevan
-								di era modern.
-							</p>
-							<p class="font-source-sans text-lg">
-								<span class="font-bold">Poesaka</span> hadir sebagai platform
-								yang menyajikan beragam informasi menarik mengenai kekayaan
-								budaya Nusantara, mengangkat keunikan budaya Indonesia ke
-								panggung dunia.
-							</p>
-						</div>
-						<div class="w-2/6 max-md:w-full">
-							<img
-								src="assets/images/ubud-bali.webp"
-								alt="ubud-bali"
-								class="rounded-[20px] md:h-full h-[350px] w-full object-cover"
-							/>
-						</div>
-					</div>
-				</div>
-				<img
-					src="/assets/images/vector-jakarta.svg"
-					alt="vector-jakarta"
-					class="absolute bottom-0 max-[364px]:hidden block"
-				/>
-				
-			</div>
-		</section>
+    <section class="relative" id="tentang">
+      <div
+        class="bg-dark-choco absolute z-10 -top-96 w-full lg:min-h-[2700px] md:min-h-[2000px] min-h-[2500px] rounded-t-[200px] max-sm:rounded-t-[70px]"
+      >
+        <img
+          src="/assets/images/gunungan-kiri.svg"
+          alt="gunungan-wayang"
+          class="absolute -z-10 left-0 md:-top-64 max-md:w-1/2"
+        />
+        <img
+          src="/assets/images/gunungan-kanan.svg"
+          alt="gunungan-wayang"
+          class="absolute -z-10 right-0 md:-top-28 top-40 max-md:w-1/2"
+        />
+        <div class="px-32 max-md:px-10 md:mt-56 mt-48">
+          <div class="text-yellow-light">
+            <p class="font-source-sans font-bold uppercase">
+              Tujuan Melestarikan Budaya Indonesia
+            </p>
+            <h1 class="font-libre lg:text-5xl md:text-4xl text-3xl mt-5">
+              Tanpa budaya lokal, kita kehilangan jati diri.
+              <span class="font-bold">Lestarikan warisan leluhur</span>, karena
+              itulah yang membuat bangsa ini bermakna.
+            </h1>
+          </div>
+          <div class="flex md:flex-row flex-col gap-5 md:mt-16 mt-8">
+            <div class="lg:w-4/6 md:w-3/6">
+              <img
+                src="assets/images/candi-borobudur-photo.webp"
+                alt="candi-borobudur-photo"
+                class="rounded-[20px] h-full object-cover"
+              />
+            </div>
+            <div
+              class="bg-yellow-light lg:w-2/6 md:w-3/6 rounded-[20px] text-dark-choco flex gap-2 flex-col justify-center px-11 py-10"
+            >
+              <h2 class="font-libre font-bold lg:text-3xl max-lg:text-2xl">
+                Candi Borobudur
+              </h2>
+              <p class="font-source-sans md:text-balance">
+                Seperti Candi Borobudur yang abadi, budaya lokal adalah warisan
+                luhur yang harus kita jaga sebagai jati diri bangsa.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex md:flex-row flex-col max-md:flex-col-reverse gap-5 md:mt-8 mt-6"
+          >
+            <div
+              class="bg-yellow-light w-4/6 max-md:w-full rounded-[20px] text-dark-choco flex gap-2 flex-col justify-center px-11 py-10"
+            >
+              <h2 class="font-libre font-bold lg:text-3xl max-lg:text-2xl">
+                Tujuan Kami
+              </h2>
+              <p class="font-source-sans text-lg">
+                Memudarnya pengetahuan generasi muda tentang budaya lokal,
+                ditambah dengan pesatnya arus globalisasi, menjadi tantangan
+                besar dalam melestarikan warisan budaya kita. Untuk menjawab
+                tantangan ini, kami bersama komunitas pecinta budaya berkomitmen
+                melestarikan dan mengembangkan budaya lokal agar tetap relevan
+                di era modern.
+              </p>
+              <p class="font-source-sans text-lg">
+                <span class="font-bold">Poesaka</span> hadir sebagai platform
+                yang menyajikan beragam informasi menarik mengenai kekayaan
+                budaya Nusantara, mengangkat keunikan budaya Indonesia ke
+                panggung dunia.
+              </p>
+            </div>
+            <div class="w-2/6 max-md:w-full">
+              <img
+                src="assets/images/ubud-bali.webp"
+                alt="ubud-bali"
+                class="rounded-[20px] md:h-full h-[350px] w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute -bottom-96 max-sm:-bottom-32 max-[364px]:hidden block"
+        >
+          <img
+            src="/assets/images/vector-jakarta.svg"
+            alt="vector-jakarta"
+            class=""
+          />
+          <img
+            src="/assets/images/peta-indonesia.webp"
+            alt="peta-indonesia"
+            class=""
+          />
+        </div>
+      </div>
+    </section>
 
-		
-		<div
-			class="flex justify-center items-center bg-white lg:mt-[2400px] md:mt-[1700px] mt-[2200px]"
-		>
-			<div class="container">
-				<ol
-					class="relative flex flex-col justify-center content-center border-s-2 border-black ms-px"
-				>
-					<li class="mb-10 ms-4">
-						<div
-							class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
-						></div>
-						<h3 class="font-libre text-2xl text-dark-choco font-bold">
-							Budaya
-						</h3>
-						<p class="font-source-sans mt-3 text-xl text-dark-choco">
-							Budaya adalah cara hidup yang berkembang dan dimiliki bersama oleh
-							suatu kelompok masyarakat. Dalam konteks budaya lokal dan
-							Nusantara, budaya mencakup nilai, tradisi, adat, seni, bahasa, dan
-							kebiasaan yang mencerminkan kekayaan warisan leluhur Indonesia,
-							diwariskan dari generasi ke generasi untuk menjaga identitas
-							bangsa.
-						</p>
-					</li>
-					<li class="mb-10 ms-4">
-						<div
-							class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
-						></div>
-						<h3 class="font-libre text-2xl text-dark-choco font-bold">
-							Globalisasi
-						</h3>
-						<p class="font-source-sans mt-3 text-xl text-dark-choco">
-							Globalisasi juga memiliki pengaruh besar terhadap perkembangan
-							budaya lokal. Bagi budaya lokal, globalisasi bisa menjadi
-							kesempatan untuk memperkenalkan budaya Indonesia ke dunia. Namun,
-							globalisasi juga membawa tantangan, seperti pengaruh budaya asing
-							yang bisa membuat generasi muda kurang tertarik pada budaya
-							leluhur kita.
-						</p>
-					</li>
-					<li class="mb-10 ms-4">
-						<div
-							class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
-						></div>
-						<h3 class="font-libre text-2xl text-dark-choco font-bold">
-							Budaya Lokal
-						</h3>
-						<p class="font-source-sans mt-3 text-xl text-dark-choco">
-							Budaya lokal yang telah menjadi harta berharga yang dimiliki oleh
-							Nusantara tentu harus bisa kita lestarikan. Hal ini penting
-							dilakukan agar budaya lokal tetap hidup, dikenal oleh generasi
-							muda, dan tidak hilang meski zaman terus berubah. Dengan beragam
-							tradisi, adat, seni, dan nilai-nilai yang diwariskan oleh leluhur,
-							menjadi keunikan tersendiri yang harus kita pertahankan.
-						</p>
-					</li>
-				</ol>
-			</div>
-		</div>
+    <div
+      class="flex justify-center items-center bg-white lg:mt-[2700px] md:mt-[2000px] max-md:mt-[2300px] mt-[2350px]"
+    >
+      <div class="container">
+        <ol
+          class="relative flex flex-col justify-center content-center border-s-2 border-black ms-px"
+        >
+          <li class="mb-10 ms-4">
+            <div
+              class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
+            ></div>
+            <h3 class="font-libre text-2xl text-dark-choco font-bold">
+              Budaya
+            </h3>
+            <p class="font-source-sans mt-3 text-xl text-dark-choco">
+              Budaya adalah cara hidup yang berkembang dan dimiliki bersama oleh
+              suatu kelompok masyarakat. Dalam konteks budaya lokal dan
+              Nusantara, budaya mencakup nilai, tradisi, adat, seni, bahasa, dan
+              kebiasaan yang mencerminkan kekayaan warisan leluhur Indonesia,
+              diwariskan dari generasi ke generasi untuk menjaga identitas
+              bangsa.
+            </p>
+          </li>
+          <li class="mb-10 ms-4">
+            <div
+              class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
+            ></div>
+            <h3 class="font-libre text-2xl text-dark-choco font-bold">
+              Globalisasi
+            </h3>
+            <p class="font-source-sans mt-3 text-xl text-dark-choco">
+              Globalisasi juga memiliki pengaruh besar terhadap perkembangan
+              budaya lokal. Bagi budaya lokal, globalisasi bisa menjadi
+              kesempatan untuk memperkenalkan budaya Indonesia ke dunia. Namun,
+              globalisasi juga membawa tantangan, seperti pengaruh budaya asing
+              yang bisa membuat generasi muda kurang tertarik pada budaya
+              leluhur kita.
+            </p>
+          </li>
+          <li class="mb-10 ms-4">
+            <div
+              class="absolute w-4 h-4 bg-dark-choco rounded-full mt-1.5 -ml-[25px] border border-white"
+            ></div>
+            <h3 class="font-libre text-2xl text-dark-choco font-bold">
+              Budaya Lokal
+            </h3>
+            <p class="font-source-sans mt-3 text-xl text-dark-choco">
+              Budaya lokal yang telah menjadi harta berharga yang dimiliki oleh
+              Nusantara tentu harus bisa kita lestarikan. Hal ini penting
+              dilakukan agar budaya lokal tetap hidup, dikenal oleh generasi
+              muda, dan tidak hilang meski zaman terus berubah. Dengan beragam
+              tradisi, adat, seni, dan nilai-nilai yang diwariskan oleh leluhur,
+              menjadi keunikan tersendiri yang harus kita pertahankan.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
 
-		<!-- FAQ -->
-		<div class="bg-white flex-col justify-items-center items-center">
-			<div class="container">
-				<h1
-					class="font-bold font-libre text-dark-choco text-5xl place-self-center mb-10"
-				>
-					FAQ
-				</h1>
+    <!-- FAQ -->
+    <div class="bg-white flex-col justify-items-center items-center">
+      <div class="container">
+        <h1
+          class="font-bold font-libre text-dark-choco text-5xl place-self-center mb-10"
+        >
+          FAQ
+        </h1>
 
-				<div
-					id="accordion-flush"
-					data-accordion="collapse"
-					data-active-classes="bg-white text-gray-900"
-					data-inactive-classes="text-gray-500"
-				>
-					<h2 id="accordion-flush-heading-1">
-						<button
-							type="button"
-							class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
-							data-accordion-target="#accordion-flush-body-1"
-							aria-expanded="true"
-							aria-controls="accordion-flush-body-1"
-						>
-							<span class="text-dark-choco">
-								Mengapa penting untuk melestarikan budaya lokal?
-							</span>
-							<svg
-								data-accordion-icon
-								class="w-3 h-3 rotate-180 shrink-0"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 10 6"
-							>
-								<path
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5 5 1 1 5"
-								/>
-							</svg>
-						</button>
-					</h2>
-					<div
-						id="accordion-flush-body-1"
-						class="hidden"
-						aria-labelledby="accordion-flush-heading-1"
-					>
-						<div class="py-5 border-b border-gray-200">
-							<p class="mb-2 font-source-sans text-dark-choco">
-								Budaya lokal adalah warisan yang mencerminkan jati diri bangsa.
-								Dengan melestarikannya, kita menjaga tradisi, nilai moral, dan
-								kebanggaan nasional. Selain itu, budaya lokal juga memiliki
-								nilai ekonomis, seperti menjadi daya tarik wisata dan produk
-								kreatif yang bernilai jual tinggi.
-							</p>
-						</div>
-					</div>
-					<h2 id="accordion-flush-heading-2">
-						<button
-							type="button"
-							class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
-							data-accordion-target="#accordion-flush-body-2"
-							aria-expanded="false"
-							aria-controls="accordion-flush-body-2"
-						>
-							<span class="text-dark-choco">
-								Bagaimana generasi muda dapat berperan dalam menjaga budaya
-								lokal?
-							</span>
-							<svg
-								data-accordion-icon
-								class="w-3 h-3 rotate-180 shrink-0"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 10 6"
-							>
-								<path
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5 5 1 1 5"
-								/>
-							</svg>
-						</button>
-					</h2>
-					<div
-						id="accordion-flush-body-2"
-						class="hidden"
-						aria-labelledby="accordion-flush-heading-2"
-					>
-						<div class="py-5 border-b border-gray-200">
-							<p class="mb-2 font-source-sans text-dark-choco">
-								Generasi muda memiliki peran penting dalam menjaga budaya lokal.
-								Mereka dapat mempelajari, mempraktikkan, dan mempromosikan
-								budaya lokal kepada dunia. Dengan kreativitas dan akses
-								teknologi, generasi muda bisa menjadikan budaya lokal tetap
-								relevan di era globalisasi.
-							</p>
-						</div>
-					</div>
-					<h2 id="accordion-flush-heading-3">
-						<button
-							type="button"
-							class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
-							data-accordion-target="#accordion-flush-body-3"
-							aria-expanded="false"
-							aria-controls="accordion-flush-body-3"
-						>
-							<span class="text-dark-choco">
-								Apakah globalisasi selalu berdampak buruk pada budaya lokal?
-							</span>
-							<svg
-								data-accordion-icon
-								class="w-3 h-3 rotate-180 shrink-0"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 10 6"
-							>
-								<path
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5 5 1 1 5"
-								/>
-							</svg>
-						</button>
-					</h2>
-					<div
-						id="accordion-flush-body-3"
-						class="hidden"
-						aria-labelledby="accordion-flush-heading-3"
-					>
-						<div class="py-5 border-b border-gray-200">
-							<p class="mb-2 font-source-sans text-dark-choco">
-								Tidak selalu. Globalisasi dapat menjadi peluang untuk
-								memperkenalkan budaya lokal ke dunia. Misalnya, batik dan
-								kuliner khas Indonesia kini dikenal secara global. Tantangannya
-								adalah memastikan budaya lokal tidak tergerus dalam proses
-								globalisasi tersebut.
-							</p>
-						</div>
-					</div>
-					<h2 id="accordion-flush-heading-4">
-						<button
-							type="button"
-							class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
-							data-accordion-target="#accordion-flush-body-4"
-							aria-expanded="false"
-							aria-controls="accordion-flush-body-2"
-						>
-							<span class="text-dark-choco">
-								Apa dampaknya jika budaya lokal tidak dilestarikan?
-							</span>
-							<svg
-								data-accordion-icon
-								class="w-3 h-3 rotate-180 shrink-0"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 10 6"
-							>
-								<path
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5 5 1 1 5"
-								/>
-							</svg>
-						</button>
-					</h2>
-					<div
-						id="accordion-flush-body-4"
-						class="hidden"
-						aria-labelledby="accordion-flush-heading-2"
-					>
-						<div class="py-5 border-b border-gray-200">
-							<p class="mb-2 font-source-sans text-dark-choco">
-								Jika budaya lokal tidak dilestarikan, kita berisiko kehilangan
-								identitas bangsa. Tradisi dan nilai-nilai luhur dapat hilang,
-								dan generasi mendatang mungkin tidak lagi mengenal akar budaya
-								mereka. Hal ini juga dapat mengurangi daya tarik wisata dan
-								potensi ekonomi lokal.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div
+          id="accordion-flush"
+          data-accordion="collapse"
+          data-active-classes="bg-white text-gray-900"
+          data-inactive-classes="text-gray-500"
+        >
+          <h2 id="accordion-flush-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
+              data-accordion-target="#accordion-flush-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-1"
+            >
+              <span class="text-dark-choco">
+                Mengapa penting untuk melestarikan budaya lokal?
+              </span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-1"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-1"
+          >
+            <div class="py-5 border-b border-gray-200">
+              <p class="mb-2 font-source-sans text-dark-choco">
+                Budaya lokal adalah warisan yang mencerminkan jati diri bangsa.
+                Dengan melestarikannya, kita menjaga tradisi, nilai moral, dan
+                kebanggaan nasional. Selain itu, budaya lokal juga memiliki
+                nilai ekonomis, seperti menjadi daya tarik wisata dan produk
+                kreatif yang bernilai jual tinggi.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
+              data-accordion-target="#accordion-flush-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-2"
+            >
+              <span class="text-dark-choco">
+                Bagaimana generasi muda dapat berperan dalam menjaga budaya
+                lokal?
+              </span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-2"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-2"
+          >
+            <div class="py-5 border-b border-gray-200">
+              <p class="mb-2 font-source-sans text-dark-choco">
+                Generasi muda memiliki peran penting dalam menjaga budaya lokal.
+                Mereka dapat mempelajari, mempraktikkan, dan mempromosikan
+                budaya lokal kepada dunia. Dengan kreativitas dan akses
+                teknologi, generasi muda bisa menjadikan budaya lokal tetap
+                relevan di era globalisasi.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
+              data-accordion-target="#accordion-flush-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-3"
+            >
+              <span class="text-dark-choco">
+                Apakah globalisasi selalu berdampak buruk pada budaya lokal?
+              </span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-3"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-3"
+          >
+            <div class="py-5 border-b border-gray-200">
+              <p class="mb-2 font-source-sans text-dark-choco">
+                Tidak selalu. Globalisasi dapat menjadi peluang untuk
+                memperkenalkan budaya lokal ke dunia. Misalnya, batik dan
+                kuliner khas Indonesia kini dikenal secara global. Tantangannya
+                adalah memastikan budaya lokal tidak tergerus dalam proses
+                globalisasi tersebut.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-source-sans font-bold rtl:text-right text-dark-choco border-b border-gray-200 gap-3"
+              data-accordion-target="#accordion-flush-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-2"
+            >
+              <span class="text-dark-choco">
+                Apa dampaknya jika budaya lokal tidak dilestarikan?
+              </span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-4"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-2"
+          >
+            <div class="py-5 border-b border-gray-200">
+              <p class="mb-2 font-source-sans text-dark-choco">
+                Jika budaya lokal tidak dilestarikan, kita berisiko kehilangan
+                identitas bangsa. Tradisi dan nilai-nilai luhur dapat hilang,
+                dan generasi mendatang mungkin tidak lagi mengenal akar budaya
+                mereka. Hal ini juga dapat mengurangi daya tarik wisata dan
+                potensi ekonomi lokal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div
-			class="flex justify-center py-8 font-source-sans px-8 md:px-[93px]"
-			id="budaya"
-		>
-			<div class="md:flex">
-				<!-- Sidebar Tabs -->
-				<ul
-					id="sidebar"
-					class="flex-column space-y space-y-4 text-sm font-medium md:me-4 mb-4 md:mb-0"
-				>
-					<li>
-						<a
-							href="#alat"
-							onclick="showTab('alat', this)"
-							class="tab-link inline-flex items-center px-9 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
-						>
-							Alat Musik
-						</a>
-					</li>
-					<li>
-						<a
-							href="#tarian"
-							onclick="showTab('tarian', this)"
-							class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
-						>
-							Tarian
-						</a>
-					</li>
-					<li>
-						<a
-							href="#senjata"
-							onclick="showTab('senjata', this)"
-							class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
-						>
-							Senjata
-						</a>
-					</li>
-					<li>
-						<a
-							href="#makanan"
-							onclick="showTab('makanan', this)"
-							class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
-						>
-							Makanan
-						</a>
-					</li>
-					<li>
-						<a
-							href="#baju"
-							onclick="showTab('baju', this)"
-							class="tab-link inline-flex items-center px-9 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
-						>
-							Baju Adat
-						</a>
-					</li>
-				</ul>
+    <div
+      class="flex justify-center py-8 font-source-sans px-8 md:px-[93px]"
+      id="budaya"
+    >
+      <div class="md:flex">
+        <!-- Sidebar Tabs -->
+        <ul
+          id="sidebar"
+          class="flex-column space-y space-y-4 text-sm font-medium md:me-4 mb-4 md:mb-0"
+        >
+          <li>
+            <a
+              href="#alat"
+              onclick="showTab('alat', this)"
+              class="tab-link inline-flex items-center px-9 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
+            >
+              Alat Musik
+            </a>
+          </li>
+          <li>
+            <a
+              href="#tarian"
+              onclick="showTab('tarian', this)"
+              class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
+            >
+              Tarian
+            </a>
+          </li>
+          <li>
+            <a
+              href="#senjata"
+              onclick="showTab('senjata', this)"
+              class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
+            >
+              Senjata
+            </a>
+          </li>
+          <li>
+            <a
+              href="#makanan"
+              onclick="showTab('makanan', this)"
+              class="tab-link inline-flex items-center px-10 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
+            >
+              Makanan
+            </a>
+          </li>
+          <li>
+            <a
+              href="#baju"
+              onclick="showTab('baju', this)"
+              class="tab-link inline-flex items-center px-9 py-4 rounded-lg md:rounded-full hover:bg-[#FFE7A7] transition duration-200 bg-[#432719] text-yellow-light hover:text-[#432719] w-full"
+            >
+              Baju Adat
+            </a>
+          </li>
+        </ul>
 
-				<!-- Tab Content -->
-				<div class="py-6 px-6 lg:px-48 text-medium bg-yellow-light rounded-lg">
-					<div
-						id="alat"
-						class="tab-content transition-opacity duration-500 opacity-100"
-					>
-						<h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
-							Alat Musik
-						</h3>
-						<div class="flex justify-center">
-							<img
-								src="./assets/img/Alat-Musik.webp"
-								alt="Profile Image"
-								class="mb-4 rounded"
-							/>
-						</div>
-						<p class="md:text-base">
-							Alat musik yang menjadi suara Nusantara, seperti gamelan,
-							angklung, dan sasando, adalah bagian tak terpisahkan dari seni dan
-							budaya bangsa. Instrumen-instrumen ini tidak hanya menghasilkan
-							melodi indah tetapi juga digunakan dalam berbagai upacara adat dan
-							perayaan, menciptakan suasana magis yang memikat.
-						</p>
-						<br />
-						<p class="text-base">
-							Dengarkan melodi indah dari alat musik tradisional Indonesia!
-							Kecapi, tanjidor, kolintang, dan masih banyak lagi, semuanya
-							menyuarakan harmoni khas nusantara yang memikat hati siapa saja.
-						</p>
-					</div>
-					<div
-						id="tarian"
-						class="tab-content transition-opacity duration-500 opacity-0 hidden"
-					>
-						<h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
-							Tarian
-						</h3>
-						<div class="flex justify-center">
-							<img
-								src="./assets/img/Tarian.webp"
-								alt="Dashboard Image"
-								class="mb-4 rounded"
-							/>
-						</div>
-						<p class="text-base">
-							Tarian tradisional Indonesia adalah bahasa seni yang mencerminkan
-							keindahan, kearifan, dan kekayaan budaya Nusantara. Dari Sabang
-							hingga Merauke, setiap daerah memiliki tarian khas yang menjadi
-							identitas dan kebanggaan masyarakatnya. Contohnya, Tari Saman dari
-							Aceh yang terkenal dengan gerakan serempak dan penuh energi,
-							menggambarkan kebersamaan dan harmoni dalam kehidupan
-							bermasyarakat.
-						</p>
-						<br />
-						<p class="text-base">
-							Gerakan, irama, dan cerita menyatu dalam tarian adat Indonesia.
-							Setiap tarian membawa kisah yang penuh warna dan makna. Saksikan
-							keindahan budaya melalui seni gerak yang memukau.
-						</p>
-					</div>
-					<div
-						id="senjata"
-						class="tab-content transition-opacity duration-500 opacity-0 hidden"
-					>
-						<h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
-							Senjata Tradisional
-						</h3>
-						<div class="flex justify-center">
-							<img
-								src="./assets/img/Senjata.webp"
-								alt="Settings Image"
-								class="mb-4 rounded"
-							/>
-						</div>
-						<p class="text-base">
-							Senjata tradisional Indonesia, seperti keris, mandau, tombak, atau
-							badik, adalah warisan budaya yang kaya akan nilai historis dan
-							spiritual. Tidak hanya berfungsi sebagai alat untuk bertahan
-							hidup, senjata-senjata ini juga melambangkan kearifan lokal,
-							keberanian, dan filosofi hidup yang diwariskan dari generasi ke
-							generasi. Proses pembuatannya melibatkan keterampilan tinggi yang
-							dipadukan dengan doa dan ritual khusus.
-						</p>
-						<br />
-						<p class="text-base">
-							Lebih dari sekadar yang kita bayangkan, senjata tradisional
-							Indonesia adalah simbol keberanian dan kearifan lokal. Pelajari
-							kisah di balik setiap senjata yang mencerminkan kebesaran budaya
-							kita.
-						</p>
-					</div>
-					<div
-						id="makanan"
-						class="tab-content transition-opacity duration-500 opacity-0 hidden"
-					>
-						<h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
-							Makanan Tradisional
-						</h3>
-						<div class="flex justify-center">
-							<img
-								src="./assets/img/Makanan-Traditional.webp"
-								alt="Contact Image"
-								class="mb-4 rounded"
-							/>
-						</div>
-						<p class="text-base">
-							Indonesia kaya akan cita rasa yang dimilikinya. Makanan khasnya
-							tidak hanya memanjakan lidah, tetapi juga menyimpan cerita dan
-							tradisi. Setiap hidangan, seperti rendang, sate, atau papeda,
-							mencerminkan keunikan daerah asalnya. Dengan rempah-rempah yang
-							melimpah, masakan Indonesia menjadi salah satu warisan budaya yang
-							diakui dunia.
-						</p>
-						<br />
-						<p class="text-base">
-							Nikmati kelezatan autentik dari berbagai daerah di Indonesia!
-							Setiap hidangan khas adalah perpaduan rasa, tradisi, dan sejarah
-							yang telah diwariskan dari generasi ke generasi. Temukan cita rasa
-							Indonesia yang tak terlupakan.
-						</p>
-					</div>
-					<div
-						id="baju"
-						class="tab-content transition-opacity duration-500 opacity-0 hidden"
-					>
-						<h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
-							Baju Adat
-						</h3>
-						<div class="flex justify-center">
-							<img
-								src="./assets/img/Baju-Adat.webp"
-								alt="Contact Image"
-								class="mb-4 rounded"
-							/>
-						</div>
-						<p class="text-base">
-							Baju adat Indonesia adalah cerminan identitas dan tradisi tiap
-							daerah. Dengan desain, warna, dan motif yang khas, pakaian adat
-							seperti kebaya, ulos, atau baju bodo memiliki nilai budaya yang
-							sarat makna. Setiap potongan kain dan aksesorisnya menceritakan
-							cerita tentang kebanggaan dan warisan leluhur.
-						</p>
-						<br />
-						<p class="text-base">
-							Setiap baju adat Indonesia adalah simbol keindahan dan makna
-							mendalam. Dari songket Sumatera hingga kebaya Jawa, temukan pesona
-							pakaian tradisional yang mencerminkan identitas dan kebanggaan
-							budaya kita.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Tab Content -->
+        <div class="py-6 px-6 lg:px-48 text-medium bg-yellow-light rounded-lg">
+          <div
+            id="alat"
+            class="tab-content transition-opacity duration-500 opacity-100"
+          >
+            <h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
+              Alat Musik
+            </h3>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Alat-Musik.webp"
+                alt="Profile Image"
+                class="mb-4 rounded"
+              />
+            </div>
+            <p class="md:text-base">
+              Alat musik yang menjadi suara Nusantara, seperti gamelan,
+              angklung, dan sasando, adalah bagian tak terpisahkan dari seni dan
+              budaya bangsa. Instrumen-instrumen ini tidak hanya menghasilkan
+              melodi indah tetapi juga digunakan dalam berbagai upacara adat dan
+              perayaan, menciptakan suasana magis yang memikat.
+            </p>
+            <br />
+            <p class="text-base">
+              Dengarkan melodi indah dari alat musik tradisional Indonesia!
+              Kecapi, tanjidor, kolintang, dan masih banyak lagi, semuanya
+              menyuarakan harmoni khas nusantara yang memikat hati siapa saja.
+            </p>
+          </div>
+          <div
+            id="tarian"
+            class="tab-content transition-opacity duration-500 opacity-0 hidden"
+          >
+            <h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
+              Tarian
+            </h3>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Tarian.webp"
+                alt="Dashboard Image"
+                class="mb-4 rounded"
+              />
+            </div>
+            <p class="text-base">
+              Tarian tradisional Indonesia adalah bahasa seni yang mencerminkan
+              keindahan, kearifan, dan kekayaan budaya Nusantara. Dari Sabang
+              hingga Merauke, setiap daerah memiliki tarian khas yang menjadi
+              identitas dan kebanggaan masyarakatnya. Contohnya, Tari Saman dari
+              Aceh yang terkenal dengan gerakan serempak dan penuh energi,
+              menggambarkan kebersamaan dan harmoni dalam kehidupan
+              bermasyarakat.
+            </p>
+            <br />
+            <p class="text-base">
+              Gerakan, irama, dan cerita menyatu dalam tarian adat Indonesia.
+              Setiap tarian membawa kisah yang penuh warna dan makna. Saksikan
+              keindahan budaya melalui seni gerak yang memukau.
+            </p>
+          </div>
+          <div
+            id="senjata"
+            class="tab-content transition-opacity duration-500 opacity-0 hidden"
+          >
+            <h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
+              Senjata Tradisional
+            </h3>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Senjata.webp"
+                alt="Settings Image"
+                class="mb-4 rounded"
+              />
+            </div>
+            <p class="text-base">
+              Senjata tradisional Indonesia, seperti keris, mandau, tombak, atau
+              badik, adalah warisan budaya yang kaya akan nilai historis dan
+              spiritual. Tidak hanya berfungsi sebagai alat untuk bertahan
+              hidup, senjata-senjata ini juga melambangkan kearifan lokal,
+              keberanian, dan filosofi hidup yang diwariskan dari generasi ke
+              generasi. Proses pembuatannya melibatkan keterampilan tinggi yang
+              dipadukan dengan doa dan ritual khusus.
+            </p>
+            <br />
+            <p class="text-base">
+              Lebih dari sekadar yang kita bayangkan, senjata tradisional
+              Indonesia adalah simbol keberanian dan kearifan lokal. Pelajari
+              kisah di balik setiap senjata yang mencerminkan kebesaran budaya
+              kita.
+            </p>
+          </div>
+          <div
+            id="makanan"
+            class="tab-content transition-opacity duration-500 opacity-0 hidden"
+          >
+            <h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
+              Makanan Tradisional
+            </h3>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Makanan-Traditional.webp"
+                alt="Contact Image"
+                class="mb-4 rounded"
+              />
+            </div>
+            <p class="text-base">
+              Indonesia kaya akan cita rasa yang dimilikinya. Makanan khasnya
+              tidak hanya memanjakan lidah, tetapi juga menyimpan cerita dan
+              tradisi. Setiap hidangan, seperti rendang, sate, atau papeda,
+              mencerminkan keunikan daerah asalnya. Dengan rempah-rempah yang
+              melimpah, masakan Indonesia menjadi salah satu warisan budaya yang
+              diakui dunia.
+            </p>
+            <br />
+            <p class="text-base">
+              Nikmati kelezatan autentik dari berbagai daerah di Indonesia!
+              Setiap hidangan khas adalah perpaduan rasa, tradisi, dan sejarah
+              yang telah diwariskan dari generasi ke generasi. Temukan cita rasa
+              Indonesia yang tak terlupakan.
+            </p>
+          </div>
+          <div
+            id="baju"
+            class="tab-content transition-opacity duration-500 opacity-0 hidden"
+          >
+            <h3 class="text-4xl font-bold text-dark-choco mb-2 text-center">
+              Baju Adat
+            </h3>
+            <div class="flex justify-center">
+              <img
+                src="./assets/images/Baju-Adat.webp"
+                alt="Contact Image"
+                class="mb-4 rounded"
+              />
+            </div>
+            <p class="text-base">
+              Baju adat Indonesia adalah cerminan identitas dan tradisi tiap
+              daerah. Dengan desain, warna, dan motif yang khas, pakaian adat
+              seperti kebaya, ulos, atau baju bodo memiliki nilai budaya yang
+              sarat makna. Setiap potongan kain dan aksesorisnya menceritakan
+              cerita tentang kebanggaan dan warisan leluhur.
+            </p>
+            <br />
+            <p class="text-base">
+              Setiap baju adat Indonesia adalah simbol keindahan dan makna
+              mendalam. Dari songket Sumatera hingga kebaya Jawa, temukan pesona
+              pakaian tradisional yang mencerminkan identitas dan kebanggaan
+              budaya kita.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="py-[80px] text-4xl px-8 md:px-[93px]">
-			<center>
-				<p class="text-dark-choco font-libre">
-					Kekayaan Geologi <span class="text-choco">Indonesia</span>
-				</p>
-			</center>
-			<div
-				class="md:flex justify-center md:text-[50px] font-source-sans md:space-x-9 md:space-y-1 space-y-7 py-9"
-			>
-				<center>
-					<p class="counter1 text-dark-choco font-bold">38</p>
-					<span class="text-dark-choco text-3xl">Provinsi</span>
-				</center>
-				<center>
-					<p class="counter2 text-dark-choco font-bold">718</p>
-					<span class="text-dark-choco text-3xl">Bahasa Daerah</span>
-				</center>
-				<center>
-					<p class="counter3 text-dark-choco font-bold">17.000+</p>
-					<span class="text-dark-choco text-3xl">Pulau</span>
-				</center>
-			</div>
-		</div>
+    <div class="py-[80px] text-4xl px-8 md:px-[93px]">
+      <center>
+        <p class="text-dark-choco font-libre">
+          Kekayaan Geologi <span class="text-choco">Indonesia</span>
+        </p>
+      </center>
+      <div
+        class="md:flex justify-center md:text-[50px] font-source-sans md:space-x-9 md:space-y-1 space-y-7 py-9"
+      >
+        <center>
+          <p class="counter1 text-dark-choco font-bold">38</p>
+          <span class="text-dark-choco text-3xl">Provinsi</span>
+        </center>
+        <center>
+          <p class="counter2 text-dark-choco font-bold">718</p>
+          <span class="text-dark-choco text-3xl">Bahasa Daerah</span>
+        </center>
+        <center>
+          <p class="counter3 text-dark-choco font-bold">17.000+</p>
+          <span class="text-dark-choco text-3xl">Pulau</span>
+        </center>
+      </div>
+    </div>
 
-		<center>
-			<p class="py-8 font-libre text-4xl">
-				Pengaruh <span class="text-choco">Budaya Asing</span>
-			</p>
-		</center>
+    <center>
+      <p class="py-8 font-libre text-4xl">
+        Pengaruh <span class="text-choco">Budaya Asing</span>
+      </p>
+    </center>
 
-		<img
-			src="/assets/images/gunungan-kiri.svg"
-			alt="gunungan-wayang"
-			class="absolute -z-10 left-0 md:top-120 max-md:w-1/2"
-		/>
-		<img
-			src="/assets/images/gunungan-kanan.svg"
-			alt="gunungan-wayang"
-			class="absolute -z-10 right-0"
-		/>
+    <img
+      src="/assets/images/gunungan-kiri.svg"
+      alt="gunungan-wayang"
+      class="absolute -z-10 left-0 md:top-120 max-md:w-1/2"
+    />
+    <img
+      src="/assets/images/gunungan-kanan.svg"
+      alt="gunungan-wayang"
+      class="absolute -z-10 right-0"
+    />
 
-		<div
-			class="md:flex justify-center py-[30px] space-x-12 px-8 md:px-[93px]"
-			id="pengaruh"
-		>
-			<div class="card-container flex justify-center">
-				<div class="card">
-					<h3 class="font-libre text-3xl font-bold">Hambatan</h3>
-					<br />
-					<ul class="list-disc">
-						<li>
-							Masyarakat semakin kurang menghargai budaya lokal, terpengaruh
-							oleh budaya global.
-						</li>
-						<li>
-							Gaya hidup asing menggantikan kebiasaan tradisional masyarakat.
-						</li>
-						<li>
-							Dominasi budaya luar menyebabkan tergerusnya identitas budaya
-							lokal.
-						</li>
-					</ul>
-				</div>
-			</div>
+    <div
+      class="md:flex justify-center py-[30px] space-x-12 px-8 md:px-[93px]"
+      id="pengaruh"
+    >
+      <div class="card-container flex justify-center">
+        <div class="card">
+          <h3 class="font-libre text-3xl font-bold">Hambatan</h3>
+          <br />
+          <ul class="list-disc">
+            <li>
+              Masyarakat semakin kurang menghargai budaya lokal, terpengaruh
+              oleh budaya global.
+            </li>
+            <li>
+              Gaya hidup asing menggantikan kebiasaan tradisional masyarakat.
+            </li>
+            <li>
+              Dominasi budaya luar menyebabkan tergerusnya identitas budaya
+              lokal.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-			<div class="card-container flex justify-center pt-7">
-				<div class="card">
-					<h3 class="font-libre text-3xl font-bold">Solusi</h3>
-					<br />
-					<ul class="list-disc">
-						<li>
-							Meningkatkan kesadaran tentang pentingnya melestarikan budaya
-							lokal.
-						</li>
-						<li>
-							Mengintegrasikan nilai budaya lokal dalam kehidupan sehari-hari,
-							terutama di kalangan generasi muda.
-						</li>
-						<li>
-							Memanfaatkan teknologi untuk mendokumentasikan dan mempromosikan
-							budaya lokal.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div
-			class="md:flex py-12 justify-center text-yellow-light space-x-12 px-8 md:px-[93px]"
-		>
-			<div class="card-container flex justify-center">
-				<div class="card">
-					<h3 class="font-libre text-3xl font-bold">Keuntungan</h3>
-					<br />
-					<ul class="list-disc">
-						<li>Informasi tersebar lebih luas dan cepat.</li>
-						<li>
-							Perkembangan ilmu pengetahuan dan teknologi membuka peluang untuk
-							inovasi dalam pelestarian budaya.
-						</li>
-						<li>
-							Masuknya nilai positif dari budaya asing, seperti sikap toleransi
-							dan disiplin, dan kerja keras.
-						</li>
-					</ul>
-				</div>
-			</div>
+      <div class="card-container flex justify-center pt-7">
+        <div class="card">
+          <h3 class="font-libre text-3xl font-bold">Solusi</h3>
+          <br />
+          <ul class="list-disc">
+            <li>
+              Meningkatkan kesadaran tentang pentingnya melestarikan budaya
+              lokal.
+            </li>
+            <li>
+              Mengintegrasikan nilai budaya lokal dalam kehidupan sehari-hari,
+              terutama di kalangan generasi muda.
+            </li>
+            <li>
+              Memanfaatkan teknologi untuk mendokumentasikan dan mempromosikan
+              budaya lokal.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="md:flex py-12 justify-center text-yellow-light space-x-12 px-8 md:px-[93px]"
+    >
+      <div class="card-container flex justify-center">
+        <div class="card">
+          <h3 class="font-libre text-3xl font-bold">Keuntungan</h3>
+          <br />
+          <ul class="list-disc">
+            <li>Informasi tersebar lebih luas dan cepat.</li>
+            <li>
+              Perkembangan ilmu pengetahuan dan teknologi membuka peluang untuk
+              inovasi dalam pelestarian budaya.
+            </li>
+            <li>
+              Masuknya nilai positif dari budaya asing, seperti sikap toleransi
+              dan disiplin, dan kerja keras.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-			<div class="card-container flex justify-center pt-7">
-				<div class="card">
-					<h3 class="font-libre text-3xl font-bold">Peluang</h3>
-					<br />
-					<ul class="list-disc">
-						<li>
-							Media digital mempermudah memperkenalkan budaya lokal ke dunia
-							internasional.
-						</li>
-						<li>
-							Teknologi mendukung pelestarian budaya, seperti pembuatan arsip
-							digital.
-						</li>
-						<li>
-							Memperluas wawasan global untuk memperkaya perspektif lokal.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+      <div class="card-container flex justify-center pt-7">
+        <div class="card">
+          <h3 class="font-libre text-3xl font-bold">Peluang</h3>
+          <br />
+          <ul class="list-disc">
+            <li>
+              Media digital mempermudah memperkenalkan budaya lokal ke dunia
+              internasional.
+            </li>
+            <li>
+              Teknologi mendukung pelestarian budaya, seperti pembuatan arsip
+              digital.
+            </li>
+            <li>
+              Memperluas wawasan global untuk memperkaya perspektif lokal.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-		<center>
-			<p class="py-12 font-libre text-4xl">
-				Hubungi<span class="text-choco"> Kami</span>
-			</p>
-		</center>
+    <center>
+      <p class="py-12 font-libre text-4xl">
+        Hubungi<span class="text-choco"> Kami</span>
+      </p>
+    </center>
 
-		<div class="md:flex justify-center" id="hubungi">
-			<div class="flex py-6 px-6 justify-center">
-				<div
-					class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
-				>
-					<div class="flex items-center gap-4 text-slate-800">
-						<img
-							src="./assets/contact/Raditya-Ananda-Rohman.webp"
-							class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
-						/>
-						<div class="flex w-full flex-col">
-							<div class="flex items-center justify-between">
-								<h5 class="text-xl font-libre font-semibold text-dark-choco">
-									Raditya Ananda Rohman
-								</h5>
-							</div>
-						</div>
-					</div>
-					<div class="mt-6">
-						<p
-							class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
-						>
-							Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
-							SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
-							siswa yang memiliki minat dalam bidang Front-End Website
-							Development. Bagi saya, menjadi seorang front end developer adalah
-							tentang menciptakan pengalaman yang menarik dan interaktif bagi
-							pengguna di berbagai platform.
-						</p>
-					</div>
-					<div class="flex justify-end gap-4">
-						<div>
-							<a
-								href="https://github.com/radityarohman"
-								target="_blank"
-								rel="noopener noreferrer"
-								><img src="./assets/contact/icon/github.svg" alt=""
-							/></a>
-						</div>
-						<div>
-							<a
-								href="https://www.linkedin.com/in/raditya-ananda-rohman-71b112262/"
-								target="_blank"
-								rel="noopener noreferrer"
-								><img src="./assets/contact/icon/linkedin.svg" alt=""
-							/></a>
-						</div>
-						<div>
-							<a
-								href="https://www.instagram.com/raditya26._"
-								target="_blank"
-								rel="noopener noreferrer"
-								><img src="./assets/contact/icon/instagram.svg" alt=""
-							/></a>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="md:flex justify-center" id="hubungi">
+      <div class="flex py-6 px-6 justify-center">
+        <div
+          class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
+        >
+          <div class="flex items-center gap-4 text-slate-800">
+            <img
+              src="./assets/contact/Raditya-Ananda-Rohman.webp"
+              class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+            />
+            <div class="flex w-full flex-col">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xl font-libre font-semibold text-dark-choco">
+                  Raditya Ananda Rohman
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <p
+              class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
+            >
+              Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
+              SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
+              siswa yang memiliki minat dalam bidang Front-End Website
+              Development. Bagi saya, menjadi seorang front end developer adalah
+              tentang menciptakan pengalaman yang menarik dan interaktif bagi
+              pengguna di berbagai platform.
+            </p>
+          </div>
+          <div class="flex justify-end gap-4">
+            <div>
+              <a
+                href="https://github.com/radityarohman"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/contact/icon/github.svg" alt=""
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/raditya-ananda-rohman-71b112262/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/contact/icon/linkedin.svg" alt=""
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/raditya26._"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/contact/icon/instagram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="flex py-6 px-6 justify-center">
-				<div
-					class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
-				>
-					<div class="flex items-center gap-4 text-slate-800">
-						<img
-							src="./assets/contact/Alif-Fadhilah-Fathin.webp"
-							class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
-						/>
-						<div class="flex w-full flex-col">
-							<div class="flex items-center justify-between">
-								<h5 class="text-xl font-libre font-semibold text-dark-choco">
-									Alif Fadhilah Fathin
-								</h5>
-							</div>
-						</div>
-					</div>
-					<div class="mt-6">
-						<p
-							class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
-						>
-							Saya Alif Fadhilah Fathin, siswa SMKN 69 Jakarta, Jurusan SIJA
-							(Sistem Informatika Jaringan Aplikasi). Sebagai seseorang yang
-							memiliki minat dalam Back-End Developer, membuat saya memiliki
-							pandangan lain tentang teknologi. Saya menyadari bahwa teknologi
-							bukan hanya sebuah perkembangan zaman, tetapi merupakan evolusi
-							dari hal itu sendiri.
-						</p>
-					</div>
-					<div class="flex justify-end gap-4">
-						<div>
-							<a
-								href="https://github.com/Alfafa20"
-								target="_blank"
-								rel="noopener noreferrer"
-								><img src="./assets/contact/icon/github.svg" alt=""
-							/></a>
-						</div>
-						<div>
-							<a
-								href="https://www.instagram.com/alfafa_20"
-								target="_blank"
-								rel="noopener noreferrer"
-								><img src="./assets/contact/icon/instagram.svg" alt=""
-							/></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="flex py-6 px-6 justify-center">
-			<div
-				class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
-			>
-				<div class="flex items-center gap-4 text-slate-800">
-					<img
-						src="./assets/contact/Jamaro-David-Saragih.webp"
-						class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
-					/>
-					<div class="flex w-full flex-col">
-						<div class="flex items-center justify-between">
-							<h5 class="text-xl font-libre font-semibold text-dark-choco">
-								Jamaro David Saragih
-							</h5>
-						</div>
-					</div>
-				</div>
-				<div class="mt-6">
-					<p
-						class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
-					>
-						Saya Jamaro David Saragih, siswa SMKN 69 Jakarta, Jurusan SIJA
-						(Sistem Informatika Jaringan Aplikasi). Saya memiliki antusiasme
-						dalam teknologi informasi dan perangkat lunak. Menurut saya
-						seseorang yang dapat mengembangkan berbagai aplikasi, website, atau
-						solusi teknologi lainnya dapat memberikan dampak positif bagi
-						masyarakat.
-					</p>
-				</div>
-				<div class="flex justify-end gap-4">
-					<div>
-						<a
-							href="https://github.com/jamarodavid"
-							target="_blank"
-							rel="noopener noreferrer"
-							><img src="./assets/contact/icon/github.svg" alt=""
-						/></a>
-					</div>
-					<div>
-						<a
-							href="https://www.linkedin.com/in/jamaro-david-saragih-244975178/"
-							target="_blank"
-							rel="noopener noreferrer"
-							><img src="./assets/contact/icon/linkedin.svg" alt=""
-						/></a>
-					</div>
-					<div>
-						<a
-							href="https://www.instagram.com/jmrodvd/"
-							target="_blank"
-							rel="noopener noreferrer"
-							><img src="./assets/contact/icon/instagram.svg" alt=""
-						/></a>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="flex py-6 px-6 justify-center">
+        <div
+          class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
+        >
+          <div class="flex items-center gap-4 text-slate-800">
+            <img
+              src="./assets/contact/Alif-Fadhilah-Fathin.webp"
+              class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+            />
+            <div class="flex w-full flex-col">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xl font-libre font-semibold text-dark-choco">
+                  Alif Fadhilah Fathin
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <p
+              class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
+            >
+              Saya Alif Fadhilah Fathin, siswa SMKN 69 Jakarta, Jurusan SIJA
+              (Sistem Informatika Jaringan Aplikasi). Sebagai seseorang yang
+              memiliki minat dalam Back-End Developer, membuat saya memiliki
+              pandangan lain tentang teknologi. Saya menyadari bahwa teknologi
+              bukan hanya sebuah perkembangan zaman, tetapi merupakan evolusi
+              dari hal itu sendiri.
+            </p>
+          </div>
+          <div class="flex justify-end gap-4">
+            <div>
+              <a
+                href="https://github.com/Alfafa20"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/contact/icon/github.svg" alt=""
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/alfafa_20"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/contact/icon/instagram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex py-6 px-6 justify-center">
+      <div
+        class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white duration-300 hover:shadow-2xl border border-[#432719] border-2"
+      >
+        <div class="flex items-center gap-4 text-slate-800">
+          <img
+            src="./assets/contact/Jamaro-David-Saragih.webp"
+            class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+          />
+          <div class="flex w-full flex-col">
+            <div class="flex items-center justify-between">
+              <h5 class="text-xl font-libre font-semibold text-dark-choco">
+                Jamaro David Saragih
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <p
+            class="text-base font-source-sans text-dark-choco font-semibold leading-normal"
+          >
+            Saya Jamaro David Saragih, siswa SMKN 69 Jakarta, Jurusan SIJA
+            (Sistem Informatika Jaringan Aplikasi). Saya memiliki antusiasme
+            dalam teknologi informasi dan perangkat lunak. Menurut saya
+            seseorang yang dapat mengembangkan berbagai aplikasi, website, atau
+            solusi teknologi lainnya dapat memberikan dampak positif bagi
+            masyarakat.
+          </p>
+        </div>
+        <div class="flex justify-end gap-4">
+          <div>
+            <a
+              href="https://github.com/jamarodavid"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/contact/icon/github.svg" alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/jamaro-david-saragih-244975178/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/contact/icon/linkedin.svg" alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/jmrodvd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./assets/contact/icon/instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<footer class="bg-dark-choco shadow mt-32">
-			<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-				<div class="sm:flex sm:items-center sm:justify-between">
-					<a
-						href="#beranda"
-						class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-					>
-						<span
-							class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-							>Poesaka</span
-						>
-					</a>
-					<ul
-						class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
-					>
-						<li>
-							<a href="#beranda" class="hover:underline me-4 md:me-6"
-								>Beranda</a
-							>
-						</li>
-						<li>
-							<a href="#tentang" class="hover:underline me-4 md:me-6"
-								>Tentang</a
-							>
-						</li>
-						<li>
-							<a href="#budaya" class="hover:underline me-4 md:me-6">Budaya</a>
-						</li>
-						<li>
-							<a href="#pengaruh" class="hover:underline me-4 md:me-6"
-								>Pengaruh</a
-							>
-						</li>
-						<li>
-							<a href="#hubungi" class="hover:underline me-4 md:me-6"
-								>Hubungi Kami</a
-							>
-						</li>
-					</ul>
-				</div>
-				<hr
-					class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-				/>
-				<span
-					class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-					><script type="text/javascript">
-						let year = new Date();
-						document.write(year.getFullYear());
-					</script>
-					<a href="https://flowbite.com/" class="hover:underline">Poesaka</a>.
-					All Rights Reserved.</span
-				>
-			</div>
-		</footer>
+    <footer class="bg-dark-choco shadow mt-32">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="#beranda"
+            class="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="/assets/images/logo-poesaka.png"
+              alt="logo-poesaka"
+              class="w-10"
+            />
+            <span
+              class="self-center text-lg whitespace-nowrap text-yellow-light font-libre"
+              >Poesaka</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#beranda" class="hover:underline me-4 md:me-6"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a href="#tentang" class="hover:underline me-4 md:me-6"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a href="#budaya" class="hover:underline me-4 md:me-6">Budaya</a>
+            </li>
+            <li>
+              <a href="#pengaruh" class="hover:underline me-4 md:me-6"
+                >Pengaruh</a
+              >
+            </li>
+            <li>
+              <a href="#hubungi" class="hover:underline me-4 md:me-6"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          ><script type="text/javascript">
+            let year = new Date();
+            document.write(year.getFullYear());
+          </script>
+          <a href="#beranda" class="hover:underline">Poesaka</a>. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
 
-		<script src="./assets/js/budaya.js"></script>
-		<script src="/assets/js/script.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-		<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
-	</body>
+    <script src="./assets/js/budaya.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+  </body>
 </html>
