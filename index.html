@@ -29,6 +29,22 @@
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: {
+                DEFAULT: 0,
+                lg: "135px",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <section
@@ -123,7 +139,7 @@
       </nav>
 
       <!-- Hero Content -->
-      <section class="md:px-0 px-10 mt-20">
+      <section class="container md:px-0 px-10 mt-20">
         <div
           class="text-center md:px-20 px-0 flex flex-col justify-items-center items-center"
         >
@@ -310,7 +326,7 @@
 
     <section class="relative" id="tentang">
       <div
-        class="bg-dark-choco absolute z-10 -top-48 w-full lg:min-h-[2700px] md:min-h-[2000px] min-h-[2500px] rounded-t-[200px] max-sm:rounded-t-[70px]"
+        class="bg-dark-choco absolute z-10 -top-48 w-full lg:min-h-[2700px] md:min-h-[2000px] min-h-[2500px] rounded-t-[200px] max-sm:rounded-t-[70px] min-[1750px]:min-h-[1200px]"
       >
         <img
           src="/assets/images/gunungan-kiri.svg"
@@ -322,7 +338,8 @@
           alt="gunungan-wayang"
           class="absolute -z-10 right-0 md:-top-28 top-40 max-md:w-1/2"
         />
-        <div class="px-32 max-md:px-10 md:mt-56 mt-48">
+
+        <div class="container px-32 max-md:px-10 md:mt-56 mt-48">
           <div class="text-yellow-light">
             <p class="font-source-sans font-bold uppercase">
               Tujuan Melestarikan Budaya Indonesia
@@ -390,18 +407,13 @@
         <img
           src="/assets/images/vector-jakarta.svg"
           alt="vector-jakarta"
-          class="absolute bottom-0"
+          class="absolute -bottom-0 max-sm:hidden min-[1750px]:hidden"
         />
       </div>
-      <img
-        src="/assets/images/indonesian-map.svg"
-        alt="peta-indonesia"
-        class="w-full"
-      />
     </section>
 
     <div
-      class="flex justify-center items-center bg-white lg:mt-[2700px] md:mt-[2000px] max-md:mt-[2300px] mt-[2350px]"
+      class="flex justify-center items-center bg-white lg:mt-[2600px] md:mt-[1850px] max-md:mt-[2300px] mt-[2350px] min-[1750px]:mt-[1900px]"
     >
       <div class="container">
         <ol
@@ -656,7 +668,7 @@
     </div>
 
     <div
-      class="flex justify-center py-8 font-source-sans px-8 md:px-[93px]"
+      class="container flex justify-center py-8 font-source-sans px-8 md:px-[93px]"
       id="budaya"
     >
       <div class="md:flex">
